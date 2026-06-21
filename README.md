@@ -9,6 +9,8 @@ Optimierter mpv-Fork + Starter-Scripts für den **Radxa Rock 5B (RK3588)** mit g
 **→ [dist/INSTALL.md](dist/INSTALL.md)** — Tarball und `.run`-Installer für Rock 5B (aarch64, ~15 MB)  
 *English:* [dist/INSTALL.en.md](dist/INSTALL.en.md)
 
+**Paket bauen:** [`package/`](package/) — Skripte für Tarball und `.run`-Installer
+
 ```bash
 tar xzf dist/rock-mp3d-mpv40-aarch64-*.tar.gz
 cd rock-mp3d-mpv40-aarch64-* && sudo ./install.sh
