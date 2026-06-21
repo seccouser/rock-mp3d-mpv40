@@ -119,3 +119,9 @@ rock-mp3d-mpv40-aarch64-*/
 - **4K60:** Beste Ergebnisse mit `rock-mp3d-play` (DRM/TTY). Desktop: `rock-mp3d-desktop-lowdrop`.
 - **Quellcode mpv:** [seccouser/mp3d-mpv40](https://github.com/seccouser/mp3d-mpv40)
 - **Scripts & BUILD:** siehe [README.md](../README.md) im Repo-Root
+
+---
+
+**Autor / Maintainer:** Ulrich Daehnert, Deutschland  
+**Copyright © 2026 Ulrich Daehnert.** Dokumentation und Paketierung dieses Projekts.  
+*English:* [INSTALL.en.md](INSTALL.en.md)

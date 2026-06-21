@@ -1,17 +1,17 @@
-# Build-Anleitung für mp3dplayer (Rock 5B)
+# Build guide for mp3d player (Rock 5B)
 
-Diese Anleitung beschreibt, wie du den mpv-Fork mit Rockchip-Unterstützung auf einem **Radxa Rock 5B** neu bauen kannst.
+This guide describes how to rebuild the mpv fork with Rockchip support on a **Radxa Rock 5B**.
 
-Getestet mit dem Radxa Rock 5B Image: `rock-5b_bookworm_kde_b5`  
+Tested with the official Radxa Rock 5B image: `rock-5b_bookworm_kde_b5`  
 Download: https://docs.radxa.com/en/rock5/rock5b/download
 
-## 1. System aktualisieren
+## 1. Update system
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-## 2. Build-Tools installieren
+## 2. Install build tools
 
 ```bash
 sudo apt install -y \
@@ -24,7 +24,7 @@ sudo apt install -y \
     python3-pip
 ```
 
-## 3. Entwicklungspakete für mpv installieren
+## 3. Install mpv development packages
 
 ```bash
 sudo apt install -y \
@@ -58,7 +58,7 @@ sudo apt install -y \
     mesa-vulkan-drivers
 ```
 
-### Optional (erweiterte Features)
+### Optional (extended features)
 
 ```bash
 sudo apt install -y \
@@ -68,9 +68,9 @@ sudo apt install -y \
     libxkbcommon-dev
 ```
 
-## 4. Build-Beispiel (mpv + Rockchip)
+## 4. Build example (mpv 0.40 + Rockchip)
 
-Für den SECCO-3D-Fork: [seccouser/mp3d-mpv40](https://github.com/seccouser/mp3d-mpv40) mit **ffmpeg-rockchip** (nyanmisaka).
+For the SECCO-3D fork, use [seccouser/mp3d-mpv40](https://github.com/seccouser/mp3d-mpv40) with **ffmpeg-rockchip** (nyanmisaka).
 
 ```bash
 git clone https://github.com/seccouser/mp3d-mpv40.git
@@ -90,10 +90,10 @@ ninja -C build -j4
 sudo ninja -C build install
 ```
 
-Fertige Binaries: siehe [dist/INSTALL.md](dist/INSTALL.md).
+Ready-made binaries: see [dist/INSTALL.en.md](dist/INSTALL.en.md).
 
 ---
 
-**Autor / Maintainer:** Ulrich Daehnert, Deutschland  
-**Copyright © 2026 Ulrich Daehnert.** Dokumentation und Paketierung dieses Projekts.  
-*English:* [BUILD.en.md](BUILD.en.md)
+**Author / Maintainer:** Ulrich Daehnert, Germany  
+**Copyright © 2026 Ulrich Daehnert.** Documentation and packaging for this project.  
+*Deutsch:* [BUILD.md](BUILD.md)

@@ -1,20 +1,12 @@
-
----
-
-### Inhalt für `readme_mpv_start.md`
-
-Kopiere diesen Text in den zweiten Editor:
-
-```markdown
 # mpv auf dem Rock 5B starten – Detaillierte Anleitung
 
 ## Welches Script soll ich verwenden?
 
-| Dein Ziel                                   | Empfohlenes Script             | Ort          | Audio |
-|---------------------------------------------|--------------------------------|--------------|-------|
-| Beste Bildqualität + niedrigste Drops       | `play.sh`                      | TTY F3       | Nein  |
-| Normaler Gebrauch mit Ton                   | `play-desktop.sh`              | Desktop      | Ja    |
-| Maximale Glätte (auch für Display-Tests)    | `play-desktop-lowdrop.sh`      | Desktop      | Nein  |
+| Dein Ziel | Empfohlenes Script | Ort | Audio |
+|-----------|-------------------|-----|-------|
+| Beste Bildqualität + niedrigste Drops | `play.sh` | TTY F3 | Nein |
+| Normaler Gebrauch mit Ton | `play-desktop.sh` | Desktop | Ja |
+| Maximale Glätte (auch für Display-Tests) | `play-desktop-lowdrop.sh` | Desktop | Nein |
 
 ## Start-Beispiele
 
@@ -27,3 +19,10 @@ Kopiere diesen Text in den zweiten Editor:
 
 # Desktop – besonders flüssig
 ./play-desktop-lowdrop.sh /mnt/ssd/Videos/testvideo.mp4
+```
+
+---
+
+**Autor / Maintainer:** Ulrich Daehnert, Deutschland  
+**Copyright © 2026 Ulrich Daehnert.** Dokumentation und Paketierung dieses Projekts.  
+*English:* [readme_mpv_start.en.md](readme_mpv_start.en.md)
