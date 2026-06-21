@@ -2,6 +2,15 @@
 
 Optimierter mpv-Fork + Starter-Scripts für den **Radxa Rock 5B (RK3588)** mit guter 4K60-Unterstützung und 3D-Funktionalität.
 
+## Fertige Binary-Pakete (Installation)
+
+**→ [dist/INSTALL.md](dist/INSTALL.md)** — Tarball und `.run`-Installer für Rock 5B (aarch64, ~15 MB)
+
+```bash
+tar xzf dist/rock-mp3d-mpv40-aarch64-*.tar.gz
+cd rock-mp3d-mpv40-aarch64-* && sudo ./install.sh
+```
+
 ## Verfügbare Scripts
 
 | Script                        | Empfohlener Ort | Audio | Drops          | Zweck                                      |
