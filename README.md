@@ -20,9 +20,22 @@ cd rock-mp3d-mpv40-aarch64-* && sudo ./install.sh
 
 | Script                        | Empfohlener Ort | Audio | Drops          | Zweck                                      |
 |-------------------------------|------------------|-------|----------------|--------------------------------------------|
-| `play.sh`                     | **TTY F3**       | Nein  | Sehr niedrig   | Beste Performance + 3D-Tests              |
+| `play.sh`                     | **TTY F3**       | Ja    | ~0–1 / 30 s    | Beste Performance + 3D (mit Ton)            |
 | `play-desktop.sh`             | Desktop (X11)    | Ja    | Mittel         | Normaler Gebrauch mit Ton                 |
-| `play-desktop-lowdrop.sh`     | Desktop (X11)    | Nein  | Sehr niedrig   | Maximale Glätte für Display-Tests         |
+| `play-desktop-lowdrop.sh`     | Desktop (X11)    | Ja    | Sehr niedrig   | Maximale Glätte für Display-Tests         |
+
+### Benchmark (Rock 5B+, Juni 2026)
+
+Getestet mit **`play.sh`** (rkmpp, `--secenable=yes`, **mit Audio**), Video `bbb_sunflower_2160p_60fps_normal.mp4` (4K60), je **30 s ab Sek. 30**, mpv v0.40.0-dev:
+
+| Bedingung | Frame-Drops (5 Läufe) | Ø / 30 s |
+|-----------|------------------------|----------|
+| **TTY/DRM ohne GUI** (kein Desktop auf card0) | 1, 1, 1, 0, 1 | **~0,8** |
+| Desktop/SSH aktiv (Plasma blockiert DRM) | 10, 5, 7, 9, 7 | ~7,6 |
+
+**Fazit:** Mit Ton auf **TTY F3** praktisch butterweich. Die GUI-Konkurrenz um `/dev/dri/card0` ist der Hauptgrund für höhere Drops — nicht das Audio. Ohne vs. mit Ton im gleichen (degraderten) SSH-Test: praktisch gleich (~6 vs. ~8 Drops).
+
+→ Details: [readme_mpv_start.md](readme_mpv_start.md)
 
 ### Schnellstart
 

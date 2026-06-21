@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# TTY Version (Ctrl+Alt+F3) - Beste Performance + 3D
+# TTY Version (Ctrl+Alt+F3) - Beste Performance + 3D + Audio
 #
 
 if [ -z "$1" ]; then

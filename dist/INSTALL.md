@@ -72,7 +72,7 @@ Nur entpacken (ohne System-Installation):
 
 | Befehl | Modus |
 |--------|--------|
-| `rock-mp3d-play video.mp4` | TTY/DRM — beste Performance |
+| `rock-mp3d-play video.mp4` | TTY/DRM — beste Performance, mit Audio |
 | `rock-mp3d-desktop video.mp4` | Desktop/X11 mit Audio |
 | `rock-mp3d-desktop-lowdrop video.mp4` | Desktop, wenig Frame-Drops |
 
@@ -117,6 +117,7 @@ rock-mp3d-mpv40-aarch64-*/
 
 - **3D/SECCO:** `--secenable=yes` ist in den `play*.sh`-Scripts bereits aktiv.
 - **4K60:** Beste Ergebnisse mit `rock-mp3d-play` (DRM/TTY). Desktop: `rock-mp3d-desktop-lowdrop`.
+- **Benchmark (Rock 5B+, `play.sh` + Audio, 4K60, 30 s):** ohne GUI ~**0,8** Drops/30 s (1, 1, 1, 0, 1); mit laufendem Desktop ~**7,6** Drops/30 s. Audio ist nicht das Problem — die GUI blockiert DRM. Details: [readme_mpv_start.md](../readme_mpv_start.md).
 - **Quellcode mpv:** [seccouser/mp3d-mpv40](https://github.com/seccouser/mp3d-mpv40)
 - **Scripts & BUILD:** siehe [README.md](../README.md) im Repo-Root
 

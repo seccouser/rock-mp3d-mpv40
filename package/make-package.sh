@@ -95,7 +95,7 @@ rock-mp3d-mpv40 — Schnellinstallation (Radxa Rock 5B, aarch64)
    → Ziel: /opt/rock-mp3d-mpv40
 
 3) Abspielen:
-   rock-mp3d-play              /pfad/video.mp4   (DRM/TTY, beste Performance)
+   rock-mp3d-play              /pfad/video.mp4   (DRM/TTY, beste Performance, mit Audio)
    rock-mp3d-desktop           /pfad/video.mp4   (Desktop mit Audio)
    rock-mp3d-desktop-lowdrop   /pfad/video.mp4   (Desktop, wenig Drops)
 
